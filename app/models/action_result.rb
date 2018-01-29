@@ -1,0 +1,2 @@
+class ActionResult < ApplicationRecord
+end

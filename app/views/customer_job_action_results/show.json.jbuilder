@@ -1,0 +1,1 @@
+json.partial! "customer_job_action_results/customer_job_action_result", customer_job_action_result: @customer_job_action_result

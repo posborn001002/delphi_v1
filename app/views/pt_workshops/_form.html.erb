@@ -1,0 +1,27 @@
+<%= form_with(model: pt_workshop, local: true) do |form| %>
+  <% if pt_workshop.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pt_workshop.errors.count, "error") %> prohibited this pt_workshop from being saved:</h2>
+
+      <ul>
+      <% pt_workshop.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :date %>
+    <%= form.date_select :date, id: :pt_workshop_date %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Person_id %>
+    <%= form.text_field :Person_id, id: :pt_workshop_Person_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

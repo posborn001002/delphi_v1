@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Customerjob:</strong>
+  <%= @job_progress.CustomerJob %>
+</p>
+
+<p>
+  <strong>Actionresult:</strong>
+  <%= @job_progress.ActionResult %>
+</p>
+
+<p>
+  <strong>Lookup:</strong>
+  <%= @job_progress.Lookup %>
+</p>
+
+<%= link_to 'Edit', edit_job_progress_path(@job_progress) %> |
+<%= link_to 'Back', job_progresses_path %>

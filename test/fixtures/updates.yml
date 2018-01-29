@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  DateLookup: one
+  Person: one
+  attachment: MyString
+  text: MyText
+
+two:
+  DateLookup: two
+  Person: two
+  attachment: MyString
+  text: MyText

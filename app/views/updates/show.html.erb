@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Datelookup:</strong>
+  <%= @update.DateLookup %>
+</p>
+
+<p>
+  <strong>Person:</strong>
+  <%= @update.Person %>
+</p>
+
+<p>
+  <strong>Attachment:</strong>
+  <%= @update.attachment %>
+</p>
+
+<p>
+  <strong>Text:</strong>
+  <%= @update.text %>
+</p>
+
+<%= link_to 'Edit', edit_update_path(@update) %> |
+<%= link_to 'Back', updates_path %>

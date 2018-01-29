@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pointofpain:</strong>
+  <%= @pain_observation.PointOfPain %>
+</p>
+
+<p>
+  <strong>Jobprogress:</strong>
+  <%= @pain_observation.JobProgress %>
+</p>
+
+<p>
+  <strong>Pass fail:</strong>
+  <%= @pain_observation.pass_fail %>
+</p>
+
+<%= link_to 'Edit', edit_pain_observation_path(@pain_observation) %> |
+<%= link_to 'Back', pain_observations_path %>

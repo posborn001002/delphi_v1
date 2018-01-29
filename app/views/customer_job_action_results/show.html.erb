@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Customerjob:</strong>
+  <%= @customer_job_action_result.CustomerJob %>
+</p>
+
+<p>
+  <strong>Actionresults:</strong>
+  <%= @customer_job_action_result.ActionResults %>
+</p>
+
+<%= link_to 'Edit', edit_customer_job_action_result_path(@customer_job_action_result) %> |
+<%= link_to 'Back', customer_job_action_results_index_path %>

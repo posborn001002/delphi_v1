@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Customer Job Action Results</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Customerjob</th>
+      <th>Actionresults</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @customer_job_action_results.each do |customer_job_action_result| %>
+      <tr>
+        <td><%= customer_job_action_result.CustomerJob %></td>
+        <td><%= customer_job_action_result.ActionResults %></td>
+        <td><%= link_to 'Show', customer_job_action_result %></td>
+        <td><%= link_to 'Edit', edit_customer_job_action_result_path(customer_job_action_result) %></td>
+        <td><%= link_to 'Destroy', customer_job_action_result, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Customer Job Action Result', new_customer_job_action_result_path %>

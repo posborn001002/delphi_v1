@@ -1,0 +1,14 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Date:</strong>
+  <%= @pt_workshop.date %>
+</p>
+
+<p>
+  <strong>Person:</strong>
+  <%= @pt_workshop.Person %>
+</p>
+
+<%= link_to 'Edit', edit_pt_workshop_path(@pt_workshop) %> |
+<%= link_to 'Back', pt_workshops_path %>

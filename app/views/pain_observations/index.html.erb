@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Pain Observations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pointofpain</th>
+      <th>Jobprogress</th>
+      <th>Pass fail</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pain_observations.each do |pain_observation| %>
+      <tr>
+        <td><%= pain_observation.PointOfPain %></td>
+        <td><%= pain_observation.JobProgress %></td>
+        <td><%= pain_observation.pass_fail %></td>
+        <td><%= link_to 'Show', pain_observation %></td>
+        <td><%= link_to 'Edit', edit_pain_observation_path(pain_observation) %></td>
+        <td><%= link_to 'Destroy', pain_observation, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pain Observation', new_pain_observation_path %>

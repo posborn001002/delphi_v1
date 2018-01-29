@@ -1,0 +1,32 @@
+<%= form_with(model: pain_observation, local: true) do |form| %>
+  <% if pain_observation.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pain_observation.errors.count, "error") %> prohibited this pain_observation from being saved:</h2>
+
+      <ul>
+      <% pain_observation.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :PointOfPain_id %>
+    <%= form.text_field :PointOfPain_id, id: :pain_observation_PointOfPain_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :JobProgress_id %>
+    <%= form.text_field :JobProgress_id, id: :pain_observation_JobProgress_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pass_fail %>
+    <%= form.number_field :pass_fail, id: :pain_observation_pass_fail %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

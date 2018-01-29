@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  CustomerJob: one
+  ActionResult: one
+  Lookup: one
+
+two:
+  CustomerJob: two
+  ActionResult: two
+  Lookup: two

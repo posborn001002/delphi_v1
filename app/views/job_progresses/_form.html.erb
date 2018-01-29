@@ -1,0 +1,32 @@
+<%= form_with(model: job_progress, local: true) do |form| %>
+  <% if job_progress.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(job_progress.errors.count, "error") %> prohibited this job_progress from being saved:</h2>
+
+      <ul>
+      <% job_progress.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :CustomerJob_id %>
+    <%= form.text_field :CustomerJob_id, id: :job_progress_CustomerJob_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ActionResult_id %>
+    <%= form.text_field :ActionResult_id, id: :job_progress_ActionResult_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :Lookup_id %>
+    <%= form.text_field :Lookup_id, id: :job_progress_Lookup_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: 2018-01-29
+  day_of_month: 1
+  month: 1
+  quarter: 1
+  year: 1
+  week_of_year: 1
+  week_of_quarter: 1
+  fiscal_year: 1
+  fiscal_month: 1
+  fiscal_quarter: 1
+  fiscal_week_of_year: 1
+  fiscal_week_of_quarter: 1
+
+two:
+  date: 2018-01-29
+  day_of_month: 1
+  month: 1
+  quarter: 1
+  year: 1
+  week_of_year: 1
+  week_of_quarter: 1
+  fiscal_year: 1
+  fiscal_month: 1
+  fiscal_quarter: 1
+  fiscal_week_of_year: 1
+  fiscal_week_of_quarter: 1

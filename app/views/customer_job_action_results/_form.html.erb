@@ -1,0 +1,27 @@
+<%= form_with(model: customer_job_action_result, local: true) do |form| %>
+  <% if customer_job_action_result.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(customer_job_action_result.errors.count, "error") %> prohibited this customer_job_action_result from being saved:</h2>
+
+      <ul>
+      <% customer_job_action_result.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :CustomerJob_id %>
+    <%= form.text_field :CustomerJob_id, id: :customer_job_action_result_CustomerJob_id %>
+  </div>
+
+  <div class="field">
+    <%= form.label :ActionResults_id %>
+    <%= form.text_field :ActionResults_id, id: :customer_job_action_result_ActionResults_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  DateLookup: one
+  Metric: one
+  value: 9.99
+
+two:
+  DateLookup: two
+  Metric: two
+  value: 9.99

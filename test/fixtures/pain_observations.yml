@@ -1,0 +1,11 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  PointOfPain: one
+  JobProgress: one
+  pass_fail: 1
+
+two:
+  PointOfPain: two
+  JobProgress: two
+  pass_fail: 1
